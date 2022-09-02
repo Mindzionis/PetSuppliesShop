@@ -22,7 +22,7 @@ body {
 }
 .header-container {
     text-align: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #000000;
     position: relative;
     background:rgb(222, 184, 135);
     color: rgb(0, 0, 0);
@@ -39,16 +39,16 @@ body {
  
 .footer-container {
     text-align: center;
-    margin-top: 10px;
-    padding: 5px 0px 0px 0px;
-    border-top: 1px solid #ccc;
+    margin-top: 15%;
+    padding: 5px 5px 5px 5px;
+    border-top: 1px solid #000000;
 }
 .menu-container {
     text-align: right;
-    margin: 10px 5px;
+    margin: 20px 15px;
 }
 .menu-container a {
-    margin: 5px 5px 5px 10px;
+    margin: 5px 10px 5px 10px;
     color: #004d99;
     font-weight: bold;
     text-decoration: none;
@@ -56,7 +56,7 @@ body {
  
 .site-name {
     font-size:200%;
-    margin:10px 10px 10px 0px;
+    margin:10px 10px 10px 5px;
     padding: 15px;
 }
  
@@ -66,9 +66,9 @@ body {
  
 .demo-container, .login-container, .account-container {
     padding: 5px;
-    border: 1px solid #ccc;
-    text-align:left;
-    margin:20px 0px;
+    border: 2px solid #000000;
+    text-align:center;
+    margin:50px 415px;
 }
  
 .customer-info-container {
@@ -77,9 +77,10 @@ body {
     padding: 0px 5px;
 }
 .product-preview-container {
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
+    border-radius: 12px;
     padding: 5px;
-    width: 250px;
+    width: 200px;
     margin: 10px ;
     display: inline-block;
     text-align:left;
@@ -95,19 +96,31 @@ body {
     height: 80px;
 }
  
-ul {
+ul-1 {
+    list-style-type: "\1F449";
+    padding-left: 15px;
+    margin:5px;
+}
+
+ul-2 {
+    list-style-type: disc;
+    padding-left: 15px;
+    margin:5px;
+}
+
+ul-3 {
     list-style-type: none;
-    padding-left: 5px;
+    padding-left: 15px;
     margin:5px;
 }
  
  
 .navi-item {
-    margin: 5px 5px 5px 20px;
+    margin: 5px 5px 5px 15px;
 }
  
 .button-update-sc {
-    color: red;
+    color: #111;
     margin: 5px 5px 5px 20px;
 }
  
@@ -123,17 +136,17 @@ ul {
 }
  
 .price {
-    color: blue;
+    color: #FFFAFA;
     font-weight: bold;
 }
  
 .subtotal {
-    color: red;
-    font-weight: bold;
+    color: 	#00FF00;
+    font-weight: bolder;
 }
  
 .total {
-    color: red;
+    color: #98FB98;
     font-weight: bold;
     font-size: 120%;
 }
@@ -177,59 +190,79 @@ table td {
 }
 
 .button-2 {
-  align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 20px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
   cursor: pointer;
-  display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.button-2:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
-}
-
-.button-2:hover:after {
-  transform: translate(0, 0);
+.button-2:hover {
+  background-color: #fff;
 }
 
 .button-2:active {
-  background-color: #ffdeda;
-  outline: 0;
-}
-
-.button-2:hover {
-  outline: 0;
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
   .button-2 {
-    padding: 0 40px;
+    min-width: 120px;
+    padding: 0 25px;
   }
+}
+
+.button-3 {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-3:active,
+.button-3:focus {
+  outline: none;
+}
+
+.button-3:hover {
+  background-position: -20px -20px;
+}
+
+.button-3:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
