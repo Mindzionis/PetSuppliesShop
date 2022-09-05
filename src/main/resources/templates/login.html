@@ -9,10 +9,10 @@
       <th:block th:include="/_header"></th:block>
       <th:block th:include="/_menu"></th:block>
       
-      <div class="page-title">Login (For Employee, Manager)</div>
+      <div class="page-title">Login (For Manager, Employee)</div>
       
       <div class="login-container">
-         <h3>Enter username and password</h3>
+         <h3>Enter Username and Password</h3>
          <br>
          <!-- /login?error=true -->
          <th:block th:if="${#session != null && #session.getAttribute('SPRING_SECURITY_LAST_EXCEPTION') != null}">
@@ -27,7 +27,7 @@
             th:action="@{/j_spring_security_check}">
             <table>
                <tr>
-                  <td>User Name *</td>
+                  <td>UserName *</td>
                   <td><input name="userName" /></td>
                </tr>
                <tr>
@@ -50,8 +50,8 @@
       <div style="text-align:center">
           <h3>User/Password:</h3>
           <ul-3>        
-             <li>employee1/123</li>
-             <li>manager1/123</li>   
+             <li>Manager/123</li>
+             <li>Employee/123</li>
           </ul-3>
       </div>
       
