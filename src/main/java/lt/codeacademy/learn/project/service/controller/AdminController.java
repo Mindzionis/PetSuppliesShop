@@ -128,6 +128,20 @@ public class AdminController {
 
       return "redirect:/productList";
    }
+   
+//   @RequestMapping(value = { "/admin/productD" }, method = RequestMethod.POST)
+//   public String delete(@PathVariable("code") String code) {
+//          productDAO.deleteProduct(code);
+//          return "redirect:/productList";
+//   } 
+   
+//   @GetMapping("/delete/{code}")
+//	public String deleteProduct(@PathVariable("code") String code) {
+//	   // Product product = productDAO.findById(code)
+//	 //     .orElseThrow(() -> new IllegalArgumentException("Invalid product Id:" + id));
+//	    productDAO.deleteProduct(code);
+//	    return "redirect:/productList";
+//	}
 
    @RequestMapping(value = { "/admin/order" }, method = RequestMethod.GET)
    public String orderView(Model model, @RequestParam("orderId") String orderId) {
@@ -145,5 +159,10 @@ public class AdminController {
 
       return "order";
    }
-
+   
+//   @RequestMapping(value = "product/{code}", method = RequestMethod.DELETE)
+//   public String delete(@PathVariable("code") String code) {
+//          productDAO.deleteProduct(code);
+//          return "redirect:/productList";
+//   } 
 }

@@ -25,8 +25,12 @@
             <!-- For Manager edit Product -->
             <th:block sec:authorize="hasAuthority('ROLE_MANAGER')">
                <li>
-                 <a style="color:red;"
+                 <a style="color:blue;"
                     th:href="@{|/admin/product?code=${prodInfo.code}|}">Edit Product</a>
+                    </li>
+                    <li>
+                    <a style="color:blue;"
+                    th:href="@{|/admin/productD?code=${prodInfo.code}|}">Delete</a>
                </li>
             </th:block>
          </ul-1>

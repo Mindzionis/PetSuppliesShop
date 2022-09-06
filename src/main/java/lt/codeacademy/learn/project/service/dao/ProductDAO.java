@@ -106,5 +106,11 @@ public class ProductDAO {
     public PaginationResult<ProductInfo> queryProducts(int page, int maxResult, int maxNavigationPage) {
         return queryProducts(page, maxResult, maxNavigationPage, null);
     }
-
+    
+    public void deleteProduct(String code) {  
+    	Session session = sessionFactory.getCurrentSession();
+    	Query<?> deleteQuery = session.createQuery("DELETE FROM Products p WHERE p.code = :code");
+    	deleteQuery.setParameter("code", code);
+    	deleteQuery.executeUpdate();
+    	}
 }
