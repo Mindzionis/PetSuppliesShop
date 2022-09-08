@@ -1,26 +1,21 @@
-<div class="menu-container"
-   xmlns:th="http://www.thymeleaf.org"
-   xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" >
-   <a th:href="@{/}"><button class="button-1" role="button">Home</button></a>
-   |
-   <a th:href="@{/productList}">
-   <button class="button-1" role="button">Current Animals List</button>
-   </a>
-   |
-   <a th:href="@{/shoppingCart}">
-   <button class="button-1" role="button">My Cart</button>
-   </a>
-   |
-   <th:block sec:authorize="hasAnyRole('ROLE_MANAGER','ROLE_EMPLOYEE')">
-      <a th:href="@{/admin/orderList}">
-      <button class="button-1" role="button">Order List</button>
-      </a>
+<div class="menu-container" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	<a th:href="@{/}"><button class="button-1" role="button">Home</button></a>
+	| <a th:href="@{/productList}">
+		<button class="button-1" role="button">Current Animals List</button>
+	</a> | <a th:href="@{/shoppingCart}">
+		<button class="button-1" role="button">My Cart</button>
+	</a> |
+	<th:block sec:authorize="hasAnyRole('ROLE_MANAGER','ROLE_EMPLOYEE')">
+		<a th:href="@{/admin/orderList}">
+			<button class="button-1" role="button">Order List</button>
+		</a>
       |
    </th:block>
-   <th:block sec:authorize="hasRole('ROLE_MANAGER')">
-      <a th:href="@{/admin/product}">
-      <button class="button-1" role="button">Create Product</button>
-      </a>
+	<th:block sec:authorize="hasRole('ROLE_MANAGER')">
+		<a th:href="@{/admin/product}">
+			<button class="button-1" role="button">Create Product</button>
+		</a>
       |
    </th:block>
 </div>
