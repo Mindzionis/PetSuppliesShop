@@ -16,6 +16,6 @@ and then run it with:
 # Logins
 Initially there are 2 users in memory:
 
-Login: admin Password: admin with ADMIN role.
+Login: Manager Password: 123 with MANAGER role.
 
-Login: user Password: user with USER role.
+Login: Employee Password: 123 with EMPLOYEE role.
