@@ -8,10 +8,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>lt.codeacademy.learn</groupId>
-	<artifactId>ShoppingCartDemo</artifactId>
+	<artifactId>PetShopApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ShoppingCartDemo</name>
-	<description>Project imitates car service data management (customers, cars, tasks) with multiple user roles</description>
+	<name>PetShopApplication</name>
+	<description>Project about online Pet Shop with multiple user roles</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
